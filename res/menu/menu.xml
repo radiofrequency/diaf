@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+			
+				<item android:id="@+id/save1" 
+		android:title="Save 1" android:icon="@drawable/ic_menu_save"/>
+		<item android:id="@+id/save2" android:icon="@drawable/ic_menu_save"
+		android:title="Save 2" />
+						<item android:id="@+id/save3" 
+		android:title="Save 3" android:icon="@drawable/ic_menu_save" />
+								<item android:id="@+id/save4" 
+		android:title="Save 4" android:icon="@drawable/ic_menu_save" />
+								
+								<item android:id="@+id/cheat" 
+		android:title="Cheat" />
+							<item android:id="@+id/exit" 
+		android:title="Exit"  android:icon="@drawable/ic_menu_close_clear_cancel" />
+								
+</menu>

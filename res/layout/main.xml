@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+	android:id="@+id/main"
+    >
+   
+<com.lols.diaf.GameCanvas
+    android:id="@+id/SurfaceView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    />
+
+<!-- utton android:id="@+id/go"
+  
+  
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go"
+    >
+    
+</Button -->
+ <RelativeLayout
+        android:id="@+id/dpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            
+            
+           <ImageView
+            android:id="@+id/up"
+           
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+                 android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@drawable/up"
+   android:layout_marginBottom="0dp"
+   android:focusable="false"
+        	android:focusableInTouchMode="false"
+ 
+        	
+            ></ImageView>
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <ImageView
+            android:id="@+id/left"
+  android:background="@drawable/left"
+             android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/up"
+                    android:layout_marginRight="25dp"
+                    android:focusable="false"
+        	android:focusableInTouchMode="false"
+            ></ImageView>
+        
+             <ImageView
+            android:id="@+id/right"
+          
+              android:background="@drawable/right"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+                    android:layout_below="@+id/up"
+                    android:layout_marginLeft="25dp"
+                    android:focusable="false"
+                         	android:focusableInTouchMode="false"
+            ></ImageView>
+          
+                </LinearLayout>
+               <ImageView
+            android:id="@+id/down"
+  			android:layout_marginTop="0dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/down"
+            android:layout_below="@+id/left"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:focusable="false"
+             android:focusableInTouchMode="false"
+            >
+                   
+               </ImageView>
+               </LinearLayout>
+               
+               
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            >
+            
+
+       
+        <ImageView
+            android:id="@+id/x"
+                 android:layout_width="48dp"
+            android:layout_height="48dp"
+
+   	android:focusableInTouchMode="false"
+android:focusable="false"
+            	android:background="@drawable/xbutton"
+            	android:layout_marginBottom="30dp"
+            ></ImageView>
+        
+             <ImageView
+            android:id="@+id/c"
+                  android:layout_width="48dp"
+            android:layout_height="49dp"
+          
+           	android:background="@drawable/cbutton"
+           	           	android:focusable="false"
+           	android:focusableInTouchMode="false"
+            ></ImageView>
+          
+
+               </LinearLayout>
+               
+               
+    </RelativeLayout>
+    
+               <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+         
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+         >
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+           	android:id="@+id/savebutton"
+              android:background="@drawable/miniminer"
+              ></Button>
+          
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+         >
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+           	android:id="@+id/soundbutton"
+              android:background="@drawable/ic_lock_ringer_off"
+              ></Button>
+          
+      </LinearLayout>
+</RelativeLayout>
